@@ -1,0 +1,9 @@
+# Fruit Merge - Development & Testing Dependencies
+# =================================================
+-r requirements.txt
+
+# Testing framework
+pytest>=7.0.0
+
+# Linting & code style
+flake8>=6.0.0

@@ -1,0 +1,12 @@
+# Fruit Merge - Runtime Dependencies
+# ==================================
+
+# 2D Rigid-Body Physics Engine
+pymunk>=6.5.0
+
+# High-Performance Sprite Rendering & Image Processing
+Pillow>=10.0.0
+
+# Notes:
+# - Tkinter and winsound are included with the standard Python distribution on Windows/macOS.
+# - On Debian/Ubuntu Linux, install Tkinter via: sudo apt-get install python3-tk

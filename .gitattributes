@@ -1,0 +1,23 @@
+# Set default behavior to automatically normalize line endings
+* text=auto eol=lf
+
+# Explicitly declare text files you want to always be normalized and converted to native line endings on checkout
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+
+# Declare files that will always have CRLF line endings on checkout (Windows batches, etc.)
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+
+# Denote all binary files that should not have line endings modified
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.wav binary
+*.mp3 binary

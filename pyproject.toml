@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fruit-merge"
+version = "1.0.0"
+description = "A physics-based fruit merging puzzle game built with Python, Tkinter, and Pymunk."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Fruit Merge Contributors" }
+]
+keywords = ["game", "physics", "puzzle", "tkinter", "pymunk", "fruit-merge"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Games/Entertainment :: Puzzle Games",
+]
+dependencies = [
+    "pymunk>=6.5.0",
+    "Pillow>=10.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/ytasocak/fruit-merge"
+Repository = "https://github.com/ytasocak/fruit-merge"
+"Bug Tracker" = "https://github.com/ytasocak/fruit-merge/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "flake8>=6.0.0",
+]
+
+[project.scripts]
+fruit-merge = "main:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
